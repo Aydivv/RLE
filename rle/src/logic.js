@@ -14,9 +14,12 @@ return (isAlpha(c) || isDigit(c));
 }
 
 
-export function encoder(s){
+export function encoder(s, cs){
     if (s==""){
         return s
+    }
+    if (!cs){
+        s = s.toLowerCase();
     }
     let result = "";
     let count = 1

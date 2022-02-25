@@ -1,0 +1,23 @@
+.header__container, .header__navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header__title{
+    font-size: 2.7rem;
+    margin: 0 auto;
+    width: 85%;
+    text-align: center;
+}
+
+.header__item{
+    width: 49%;
+    display: flex;
+    justify-content: center;
+}
+
+.header__itemText{
+    text-align: center;
+    display: inline;
+}

@@ -9,16 +9,17 @@ function Header() {
         <h1 className="header__title"> Run Length Encoder </h1>
       </div>
       <div className="header__navbar">
-        <Link to="/encode">
-          <div className="header__item">
+        <div className="header__item">
+          <Link to="/encode">
             <span className="header__itemText"> Encode </span>
-          </div>
-        </Link>
-        <Link to="/decode">
-          <div className="header__item">
+          </Link>
+        </div>
+
+        <div className="header__item">
+          <Link to="/decode">
             <span className="header__itemText"> Decode </span>
-          </div>
-        </Link>
+          </Link>
+        </div>
       </div>
     </div>
   );

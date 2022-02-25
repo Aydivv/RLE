@@ -5,13 +5,13 @@ import { encoder } from "./logic";
 function Encode() {
     const [string, setString] = useState("");
     const [output, setOutput] = useState("");
+    const [caseToggle, setCaseToggle] = useState(true)
 
     const encode = e => {
         e.preventDefault()
 
         let input = string.replace(/\s+/g,' ')
-        console.log(input)
-        setOutput(encoder(input))
+        setOutput(encoder(input,caseToggle))
     }
   return (
     <div className="encode__container">
