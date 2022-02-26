@@ -43,3 +43,36 @@ export function encoder(s, cs){
     }
     return result
 }
+
+export function decoder(s){
+    if(s===""){
+        return "works"
+    }
+    let result = ""
+    let i = 0;
+    while(i<s.length){
+        if (isAlphaNum(s[i])){
+            let j = i;
+            let num = "";
+            while (1){
+                try{
+                    if (isDigit(s[j+1])){
+                        num += s[j+1];
+                        j += 1;
+                    } else {
+                        break;
+                    }
+                } catch{
+                    break;
+                }
+            }
+            num = parseInt(num)
+            result += s[i].repeat(parseInt(num));
+            i = j+1
+        } else {
+            result += s[i]
+            i = i + 1
+        }
+    }
+    return result
+}

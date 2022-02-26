@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./css/Encode.css";
 import { encoder } from "./logic";
-import TextareaAutosize from 'react-textarea-autosize';
+import TextareaAutosize from "react-textarea-autosize";
 
 function Encode() {
   const [string, setString] = useState("");
@@ -11,9 +11,9 @@ function Encode() {
   const encode = (e) => {
     e.preventDefault();
 
-    console.log(string)
-    let input = string.replace(/\s+/g, " ");
-    setOutput(encoder(input, caseToggle));
+    console.log(string);
+    setOutput(encoder(string, caseToggle));
+    console.log(output)
   };
   return (
     <div className="encode__container">
@@ -26,15 +26,11 @@ function Encode() {
             <TextareaAutosize
               className="encode__input"
               value={string}
-              onChange={(e) => {setString(e.target.value)}}
+              onChange={(e) => setString(e.target.value)
+              }
             />
-            <button
-              className="encode__submit"
-              onClick={encode}
-              type="submit"
-            >
-              {" "}
-              Encode{" "}
+            <button className="encode__submit myButton" onClick={encode} type="submit">
+              Encode
             </button>
           </form>
         </div>
@@ -45,6 +41,5 @@ function Encode() {
     </div>
   );
 }
-
 
 export default Encode;
