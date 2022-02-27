@@ -19,7 +19,6 @@ function Decode() {
       <div className="decode__items">
         <div className="decode__item">
           <p className="decode__inputText">Enter a string to decode:</p>
-
         </div>
         <div className="decode__item">
           <form className="decode__form">
@@ -28,7 +27,11 @@ function Decode() {
               value={string}
               onChange={(e) => setString(e.target.value)}
             />
-            <button className="decode__submit myButton" onClick={decode} type="submit">
+            <button
+              className="decode__submit myButton"
+              onClick={decode}
+              type="submit"
+            >
               Decode
             </button>
           </form>

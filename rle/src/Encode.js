@@ -17,22 +17,30 @@ function Encode() {
       <div className="encode__items">
         <div className="encode__item">
           <p className="encode__inputText">Enter a string to encode:</p>
-          
 
-          <span className="encode__inputText"> Case Sensitive <input className="encode__case" type="checkbox" defaultChecked={caseToggle}
-           onChange={(e) => setCaseToggle(!caseToggle)}/> </span>
-          
-          
+          <span className="encode__inputText">
+            {" "}
+            Case Sensitive{" "}
+            <input
+              className="encode__case"
+              type="checkbox"
+              defaultChecked={caseToggle}
+              onChange={(e) => setCaseToggle(!caseToggle)}
+            />{" "}
+          </span>
         </div>
         <div className="encode__item">
           <form className="encode__form">
             <TextareaAutosize
               className="encode__input"
               value={string}
-              onChange={(e) => setString(e.target.value)
-              }
+              onChange={(e) => setString(e.target.value)}
             />
-            <button className="encode__submit myButton" onClick={encode} type="submit">
+            <button
+              className="encode__submit myButton"
+              onClick={encode}
+              type="submit"
+            >
               Encode
             </button>
           </form>
