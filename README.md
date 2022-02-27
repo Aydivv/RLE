@@ -18,9 +18,8 @@ Hosted on - https://run-length-encoder.web.app
 in the terminal.
  
 
- 4. List item
- 5. If not installed, install react. Follow their documentation here: https://reactjs.org/docs/getting-started.html
- 6. Make sure you are in the rle directory and enter the command 
+ 4. If not installed, install react. Follow their documentation here: https://reactjs.org/docs/getting-started.html
+ 5. Make sure you are in the rle directory and enter the command 
 > npm start
 
 Now the application should start on your localhost with your default browser.
