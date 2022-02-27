@@ -26,6 +26,7 @@ function Decode() {
               className="decode__input"
               value={string}
               onChange={(e) => setString(e.target.value)}
+              placeholder="Enter text here"
             />
             <button
               className="decode__submit myButton"

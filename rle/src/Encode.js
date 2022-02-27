@@ -35,6 +35,7 @@ function Encode() {
               className="encode__input"
               value={string}
               onChange={(e) => setString(e.target.value)}
+              placeholder="Enter text here"
             />
             <button
               className="encode__submit myButton"
