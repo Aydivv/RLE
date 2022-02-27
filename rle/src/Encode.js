@@ -10,16 +10,19 @@ function Encode() {
 
   const encode = (e) => {
     e.preventDefault();
-
-    console.log(string);
     setOutput(encoder(string, caseToggle));
-    console.log(output)
   };
   return (
     <div className="encode__container">
       <div className="encode__items">
         <div className="encode__item">
-          <p className="encode__inputText">Enter a string to encode</p>
+          <p className="encode__inputText">Enter a string to encode:</p>
+          
+
+          <span className="encode__inputText"> Case Sensitive <input className="encode__case" type="checkbox" defaultChecked={caseToggle}
+           onChange={(e) => setCaseToggle(!caseToggle)}/> </span>
+          
+          
         </div>
         <div className="encode__item">
           <form className="encode__form">

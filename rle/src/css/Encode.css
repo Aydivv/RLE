@@ -16,6 +16,8 @@
     margin: 0.3rem auto;
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content:space-around;
 }
 
 .encode__form{
@@ -35,10 +37,16 @@
     width: 80%;
     padding: 10px 15px;
     border-radius: 20px;
+    background: none;
 }
 
 .encode__inputText{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+}
+
+.encode__case{
+    transform: scale(1.5);
+    margin: auto;
 }
 
 .encode__outputText{

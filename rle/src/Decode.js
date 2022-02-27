@@ -18,7 +18,7 @@ function Decode() {
     <div className="decode__container">
       <div className="decode__items">
         <div className="decode__item">
-          <p className="decode__inputText">Enter a string to decode</p>
+          <p className="decode__inputText">Enter a string to decode:</p>
 
         </div>
         <div className="decode__item">

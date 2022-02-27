@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
 import Encode from "./Encode.js";
 import Decode from "./Decode.js";
+import bg from "./img/mesh-gradient.png"
 
 function App() {
   return (

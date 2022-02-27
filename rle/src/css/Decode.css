@@ -35,10 +35,11 @@
     width: 80%;
     padding: 10px 15px;
     border-radius: 20px;
+    background: none;
 }
 
 .decode__inputText{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 .decode__outputText{
@@ -47,7 +48,7 @@
 }
 
 .myButton {
-	background-color:#1d5f2f;
+	background-color:#1706af;
 	border-radius:28px;
 	border:1px solid #18ab29;
 	display:inline-block;
@@ -55,10 +56,10 @@
 	color:#ffffff;
 	padding:7px 25px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
+	text-shadow:0px 1px 0px #04245e;
 }
 .myButton:hover {
-	background-color:#0f0f0f;
+	background-color:#32c2ee;
     color: #fff;
 }
 .myButton:active {

@@ -4,12 +4,13 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
-  background-color: rgb(219, 253, 223);
-  color: rgb(73, 6, 6)
+  color: rgb(73, 6, 6);
+  background-color: rgb(234, 246, 255);
 }
 
 * {
   margin: 0;
   padding: 0;
 }
+
 
